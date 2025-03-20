@@ -1,0 +1,145 @@
+body {
+  background-color: rgb(7, 7, 147);
+  padding: 0;
+  size-adjust: auto;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  scroll-behavior: smooth;
+}
+
+#home {
+  background-image: url('/assets/code_screen.jpg'); /* Path to your image */
+  background-size: cover; /* Make the image cover the entire section */
+  background-position: relative; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  height: 100vh; /* Make section full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Ensure text is readable */
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.8));
+  pointer-events: none; /* Allows interactions with content */
+
+}
+
+/*home fonts*/
+.home-content h2 {
+  font-weight: bold;
+  font-family: monospace;
+
+  padding-bottom: 50px;
+  color: yellow;
+  font-size: 5vw;
+}
+
+.home-left h3 {
+  font-size: medium;
+}
+
+.home-left h3, h4 {
+  color: skyblue;
+}
+
+.home-left h4 {
+  font-size: x-large;
+}
+
+.home-left h5 {
+  color: rgb(130, 53, 203);
+  font-size: xx-large;
+}
+
+.home-left p {
+  color: turquoise;
+}
+
+.home-right {
+  display: flex;
+  justify-content: flex-end; /* Center the image horizontally */
+  align-items: center; /* Align it vertically */
+  height: 100%; /* Ensure it takes full height of the parent */
+  position: relative;
+}
+
+.home-right img {
+  position: relative; /* Keep it in the normal document flow */
+  width: 650px; /* Set a fixed width */
+  height: 650px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image fills its box */
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  filter: drop-shadow(20px 10px 50px rgba(44, 57, 63, 0.114));
+ /* Apply fade-out effect from right side */
+  -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 80%);
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 100%);
+  /* Move image slightly to the right */
+  position: absolute;
+  right: 800%; /* Push image to the right */
+  top: 48%; /* Center it vertically */
+  transform: translateY(-50%); /* Align properly */
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .home-content h2 {
+    font-size: 6vw; /* Larger text on small screens */
+  }
+  .home-left h3 {
+    font-size: 2vw;
+  }
+  .home-left h4 {
+    font-size: 3vw;
+  }
+  .home-left h5 {
+    font-size: 4vw;
+  }
+  .home-left p {
+    font-size: 2vw;
+  }
+
+  .home-right img {
+    width: 70vw; /* Adjust image size for small screens */
+    right: 10%; /* Adjust positioning for mobile */
+  }
+}
+
+/* Larger Screen Adjustments */
+@media (min-width: 1200px) {
+  .home-content h2 {
+    font-size: 4vw; /* Slightly smaller text on large screens */
+  }
+  .home-left h3 {
+    font-size: 1.2vw;
+  }
+  .home-left h4 {
+    font-size: 2vw;
+  }
+  .home-left h5 {
+    font-size: 2.5vw;
+  }
+  .home-left p {
+    font-size: 1.2vw;
+  }
+}
+
+
+
+
+

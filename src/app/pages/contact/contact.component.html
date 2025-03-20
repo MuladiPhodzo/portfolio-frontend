@@ -1,0 +1,29 @@
+<!--contact me form-->
+<div>
+  <form method="post" class="contact-form" id="contact-form">
+    <div>
+      <h2>Contact Me</h2>
+      <button (click)="toggleForm()" mat-icon-button>
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+
+    <div>
+      <input type="text" name="name" [(ngModel)]="name" id="name" placeholder="full names">
+    </div>
+
+    <div>
+      <input type="email" name="email" [(ngModel)]="email" id="email" placeholder="email">
+    </div>
+
+    <div>
+      <input type="text" name="number" [(ngModel)]="number" id="number" placeholder="phone number">
+    </div>
+
+    <div>
+      <textarea type="text" name="message" [(ngModel)]="message" id="message" placeholder="text"></textarea>
+    </div>
+
+    <button type="submit" (click)="submitForm()">Send</button>
+  </form>
+</div>
