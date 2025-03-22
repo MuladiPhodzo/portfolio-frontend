@@ -13,14 +13,14 @@
       <section id="home" class="flex s-round sw-30 m-auto">
           <div class="home-left flex items-center">
               <div class="home-content">
-                  <h2 class="popinss">"Hello World",</h2>
-                  <h3 class="t-white">I am</h3>
-                  <h4 class="popinss">Phodzo Muladi</h4>
-                  <h5 class="popinss">a Software Engineer</h5>
+                <h2 class="popinss">"Hello World",</h2>
+                <h3 class="t-white">I am</h3>
+                <h4 class="popinss">Phodzo Muladi</h4>
+                <h5 class="popinss">a Software Engineer</h5>
               </div>
 
               <div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae consequatur fugiat et excepturi, possimus dolorem iure ea deleniti commodi maxime laboriosam assumenda vero a ad velit voluptas error dignissimos.</p>
+                  <p>I am a passionate software developer and data analyst with expertise in Python, Java, and Flutter, specializing in full-stack web development and mobile development. I have a strong foundation in data analytics, cloud computing (AWS), and quality assurance (QA testing). A graduate of WeThinkCode's software engineering program, I am eager to solve complex problems, automate processes, and build impactful tech solutions. Currently, I am developing a trading advisor, refining my Angular and Django skills, and preparing for software engineering roles. I am always learning and driven to innovate in the tech industry.</p>
               </div>
 
           </div>
@@ -37,19 +37,34 @@
             <div class="services-left flex">
               <div class="jar bar p-relative" id="S-M-Dev">
                   <span class="bar-content left t-white">Software & Mobile Development</span>
-                  <span class="bar-content right-skills t-white">70%</span>
-                  <p>During my time at WeThinkCode_ where I did mobile development as an elective, it was during this time that I learned to develop applications using flutter, a dart based framework in conjuction with firestore as a database tool, the application was based on the uber app where users could request lifts or post lift offerings. while developinf this app I implemented user authentication, authorisation and data management, all this was build on the Software Engineering principles that i learned during my time at WeThinkCode_. </p>
+
+                  <!-- Progress Bar Container -->
+                  <div class="progress-container">
+                    <div class="progress-bar"  data-progress="85"></div>
+                  </div>
+
+                  <p>
+                    During my time at WeThinkCode_ where I did mobile development as an elective, it was during this time that I learned to develop applications using flutter, a dart based framework in conjuction with firestore as a database tool, the application was based on the uber app where users could request lifts or post lift offerings. while developinf this app I implemented user authentication, authorisation and data management, all this was build on the Software Engineering principles that i learned during my time at WeThinkCode_. </p>
               </div>
 
-              <div class="jar bar p-relative">
+              <div class="jar bar p-relative" id="W-Dev">
                   <span class="bar-content left t-white">Web Development</span>
-                  <span class="bar-content right-skills t-white">60%</span>
+                  <!-- Progress Bar Container -->
+                  <div class="progress-container">
+                    <div class="progress-bar"  data-progress="75"></div>
+                  </div>
+
                   <p>Developing the WeShare app at WeThinkCode_ taught me a lot about web Development. the weShare app is a classical finance sharing and tracking app, users are able to send each other money or ask for a loan from a friend. i further develop my web developing skills when i was an intern at Qlink, developing a web based platform using vue.js and Quasar framework. I futher learned more techniques, tools and frameworks while developing this portfolio which i developed with Django-REST-Framework for the backend and Angular for the frontend.</p>
               </div>
 
-              <div class="jar bar p-relative">
+              <div class="jar bar p-relative" id="S-Q-A">
                   <span class="bar-content left t-white">Software Quality and Assurance</span>
-                  <span class="bar-content right-skills t-white">46%</span>
+
+                  <!-- Progress Bar Container -->
+                  <div class="progress-container">
+                    <div class="progress-bar"  data-progress="65"></div>
+                  </div>
+
                   <p>Already well equipped with the skills for Test Driven Development from WeThinkCode_ which aimed to train students to deliver industry standard applications, my time at Qlink where I interned for 5 months in the SQA department further instilled the requirements a program must meet to be user friendly, and meet industry standards. learning the different testing methodologies has further deepened my understanding of Software Engineering. using different testing platforms like Postman, JMeter for API testing and Selenium Web Driver for automated testing.</p>
               </div>
 
@@ -63,43 +78,64 @@
 
       <!-- skills section-->
       <section id="skills">
-          <h1 class="t-center my-2 t-white f-2">Skills</h1>
-          <div class="services-container flex s-around h-se">
-              <div class="skills-right flex items-container">
-                  <div class="skills-container">
-                      <div class="jar bar p-relative">
-                          <span class="bar-content left t-white">OOP</span>
-                          <span class="bar-content right-skills t-white">85%</span>
-                      </div>
-
-                      <div class="jar bar p-relative">
-                          <span class="bar-content left t-white">Test Driven Development</span>
-                          <span class="bar-content right-skills t-white">80%</span>
-                      </div>
-
-                      <div class="jar bar p-relative">
-                          <span class="bar-content left t-white">Version Control</span>
-                          <span class="bar-content right-skills t-white">76%</span>
-                      </div>
-
-                      <div class="jar bar p-relative">
-                          <span class="bar-content left t-white">Agile Methodologies</span>
-                          <span class="bar-content right-skills t-white">82%</span>
-                      </div>
-
-                      <div class="jar bar p-relative">
-                          <span class="bar-content left t-white">Cloud Technologies</span>
-                          <span class="bar-content right-skills t-white">54%</span>
-                      </div>
-
-                      <div class="jar bar p-relative">
-                          <span class="bar-content left t-white">CI/CD</span>
-                          <span class="bar-content right-skills t-white">60%</span>
-                      </div>
-                  </div>
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="skills-container flex s-around h-se">
+          <!-- Skill Card 1: OOP -->
+            <div class="skills-card">
+              <h3>OOP</h3>
+              <div class="rating">
+                ★★★★☆
               </div>
+              <span class="skill-level">85%</span>
+            </div>
+
+            <!-- Skill Card 2: Test Driven Development -->
+            <div class="skills-card">
+              <h3>Test Driven Development</h3>
+              <div class="rating">
+                ★★★★☆
+              </div>
+              <span class="skill-level">80%</span>
+            </div>
+
+            <!-- Skill Card 3: Version Control -->
+            <div class="skills-card">
+              <h3>Version Control</h3>
+              <div class="rating">
+                ★★★☆☆
+              </div>
+              <span class="skill-level">76%</span>
+            </div>
+
+            <!-- Skill Card 4: Agile Methodologies -->
+            <div class="skills-card">
+              <h3>Agile Methodologies</h3>
+              <div class="rating">
+                ★★★★☆
+              </div>
+              <span class="skill-level">82%</span>
+            </div>
+
+            <!-- Skill Card 5: Cloud Technologies -->
+            <div class="skills-card">
+              <h3>Cloud Technologies</h3>
+              <div class="rating">
+                ★★★☆☆
+              </div>
+              <span class="skill-level">54%</span>
+            </div>
+
+            <!-- Skill Card 6: CI/CD -->
+            <div class="skills-card">
+              <h3>CI/CD</h3>
+              <div class="rating">
+                ★★★☆☆
+              </div>
+              <span class="skill-level">60%</span>
+            </div>
           </div>
       </section>
+
 
       <!-- tech stack section-->
       <section id="stack">
