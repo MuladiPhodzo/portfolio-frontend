@@ -23,7 +23,7 @@ export interface Message {
 })
 
 export class ProjectService {
-  private apiUrl = 'http://127.0.0.1:8000/api/projects/'; // Django API URL
+  private apiUrl = 'http://13.60.162.35:8000/api/contact'; // Django API URL
 
   constructor(private http: HttpClient) {}
 

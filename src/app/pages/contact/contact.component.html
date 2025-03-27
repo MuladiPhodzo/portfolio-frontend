@@ -1,29 +1,26 @@
 <!--contact me form-->
-<div>
-  <form method="post" class="contact-form" id="contact-form">
-    <div>
-      <h2>Contact Me</h2>
-      <button (click)="toggleForm()" mat-icon-button>
-        <mat-icon>close</mat-icon>
-      </button>
-    </div>
+<div id = "contact">
+  <h2>Contact Me</h2>
+  <form method="post" class="popup-content">
+    <mat-form-field appearance="outline">
+      <input matInput type="text" name="name" [(ngModel)]="name" placeholder="Full Names">
+    </mat-form-field>
 
-    <div>
-      <input type="text" name="name" [(ngModel)]="name" id="name" placeholder="full names">
-    </div>
+    <mat-form-field appearance="outline">
+      <input matInput type="email" name="email" [(ngModel)]="email" placeholder="Email">
+    </mat-form-field>
 
-    <div>
-      <input type="email" name="email" [(ngModel)]="email" id="email" placeholder="email">
-    </div>
+    <mat-form-field appearance="outline">
+      <input matInput type="text" name="number" [(ngModel)]="number" placeholder="Phone Number">
+    </mat-form-field>
 
-    <div>
-      <input type="text" name="number" [(ngModel)]="number" id="number" placeholder="phone number">
-    </div>
+    <mat-form-field appearance="outline">
+      <textarea matInput name="message" [(ngModel)]="message" placeholder="Message"></textarea>
+    </mat-form-field>
 
-    <div>
-      <textarea type="text" name="message" [(ngModel)]="message" id="message" placeholder="text"></textarea>
+    <div class="form-actions">
+      <button mat-button (click)="closeDialog()">Cancel</button>
+      <button mat-raised-button color="primary" (click)="submitForm()">Send</button>
     </div>
-
-    <button type="submit" (click)="submitForm()">Send</button>
   </form>
 </div>

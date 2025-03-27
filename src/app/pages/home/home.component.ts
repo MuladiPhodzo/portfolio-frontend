@@ -5,7 +5,6 @@ import { DOCUMENT } from '@angular/common';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ContactComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

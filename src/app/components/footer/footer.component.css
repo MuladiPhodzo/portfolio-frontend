@@ -1,0 +1,40 @@
+#footer {
+  background-color: rgb(15, 15, 77);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border-bottom: 10px, solid, rgba(247, 248, 252, 0.905);
+  border-width: 80%;
+  line-height: 1rem;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  padding: 20px 10%;
+  height: 100px;
+
+}
+
+.social-links ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(2.2);
+  color: turquoise;
+}
+
+.copyrights {
+  margin-top: 10px;
+  font-size: 16px
+}

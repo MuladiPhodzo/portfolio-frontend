@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { MatDialog } from '@angular/material/dialog';
+import { ContactComponent } from '../../pages/contact/contact.component';
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -9,4 +10,12 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  constructor(private dialog: MatDialog) {}
+
+  openContactForm(): void {
+    this.dialog.open(ContactComponent, {
+      width: '700px',
+      disableClose: false
+    });
+  }
 }

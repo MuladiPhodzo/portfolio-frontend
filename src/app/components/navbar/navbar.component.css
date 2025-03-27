@@ -10,8 +10,8 @@
   border-width: 80%;
   line-height: 1rem;
   align-items: center;
-  padding: 10px 5%;
-  height: 50px;
+  padding: 20px 5%;
+  height: 20px;
 }
 
 .left-nav {
@@ -81,15 +81,16 @@
 }
 
 .contact-button {
-  background-color: grey;
+  background-color: rgba(209, 209, 245, 0.895);
   border: none;
-  color: white;
-  text-align: center;
+  color: rgb(65, 64, 64);
+  text-align:center;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 3px 30px;
   cursor: pointer;
   border-radius: 10px;
   font-size: 16px;
+  size: 7rcap;
 }
 
 .contact-button:hover {

@@ -181,15 +181,19 @@ html, body {
   backdrop-filter: blur(2px);
 }
 
+#services {
+  background-color: blue;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+
 #services h1 {
   text-align: center;
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
-  padding-top: 40px;
+  font-size: 90px;
+  padding-top: 20px;
   padding-bottom: 20px;
   background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   color: rgb(117, 213, 242);
   font-family:'Courier New', Courier, monospace;
-  text-decoration: underline;
 }
 
 /* Progress Bar Container */
@@ -220,8 +224,8 @@ html, body {
   filter: drop-shadow(-10px 10px 5px rgba(44, 57, 63, 0.114));
 
   /* Apply fade-out effect */
-  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 70%);
-  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0.051) 70%);
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.688) 80%, rgba(0, 0, 0, 0) 100%);
 
   /* Adjust positioning */
   position: absolute;
@@ -234,9 +238,8 @@ html, body {
 #skills h1 {
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
-  color: turquoise;
-  font-size: 280%;
-  text-decoration: underline;
+  color: rgb(90, 183, 196);
+  font-size: 90px;
 }
 
 #skills {
@@ -249,7 +252,8 @@ html, body {
   background: linear-gradient(to bottom,
     rgb(0, 0, 0),
     rgba(0, 0, 0, 0.5),
-    rgba(12, 27, 234, 0));
+    rgba(12, 27, 234, 0),
+    black);
 }
 
 .skills-container {
@@ -292,6 +296,101 @@ html, body {
   color: #ddd;
 }
 
+/*--Tech stack section--*/
+
+#stack {
+  background-color: rgba(5, 5, 71, 0.745);
+  background: linear-gradient(to bottom,
+    rgb(0, 0, 0),
+    rgba(0, 0, 0, 0.5),
+    rgba(12, 27, 234, 0),
+    black);
+    padding: 40px;
+}
+
+#stack h2 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(90, 183, 196);
+  font-size: 90px;
+}
+
+.stack-list {
+  display: grid;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 40px;
+  list-style: none;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: #085e56;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(122, 233, 233, 0.846);
+  transition: transform 0.3s;
+  min-width: 120px;
+}
+
+.tech-item:hover {
+  transform: scale(1.2);
+}
+
+.tech-item i {
+  font-size: 24px;
+  color: turquoise;
+  margin-right: 8px;
+}
+
+.tech-item img {
+  width: 100px;
+  height: 90px;
+  padding-left: 10%;
+  padding-top: 10%;
+  margin-right: 8px;
+  backdrop-filter: blur(2px);
+}
+
+.tech-item span {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*--Projects section--*/
+#git {
+  background-color: rgba(5, 5, 71, 0.745);
+  background: linear-gradient(to bottom,
+    rgb(0, 0, 0),
+    rgba(0, 0, 0, 0.5),
+    rgba(12, 27, 234, 0),
+    black);
+    padding: 40px;
+}
+
+#projects h3 {
+  color: turquoise;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+}
+
+.t-center {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 90px;
+  color: rgb(90, 183, 196);
+}
 
 /* Responsive Design */
 
