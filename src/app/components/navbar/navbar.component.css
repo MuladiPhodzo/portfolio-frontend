@@ -1,31 +1,28 @@
 #nav-bar {
   background-color: rgb(2, 2, 57);
   position: sticky;
-  display: flex;
-  justify-content: space-between; /* Pushes left and right nav to opposite ends */
   top: 0;
   left: 0;
   z-index: 100;
-  border-bottom: 10px, solid, rgba(247, 248, 252, 0.905);
-  border-width: 80%;
-  line-height: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px 5%;
-  height: 20px;
+  padding: 10px 5%;
+  border-bottom: 2px solid rgba(247, 248, 252, 0.3);
 }
 
 .left-nav {
   color: white;
-  font-weight:lighter ;
   font-weight: lighter;
-  padding-right: 5%;
 }
 
 
 
 .left-nav h1 {
   color: white;
-  padding-left: 15%;
+  margin: 0;
+  font-size: 1.8rem;
 }
 
 .right-nav {
@@ -33,22 +30,24 @@
   display: flex; /* Enables Flexbox */
   align-items: center; /* Aligns items vertically */
   gap: 5px; /* Adds spacing between items */
-  padding-right: 10%;
-  padding-left: 850px;
-  margin: 0;
+  flex-wrap: wrap;
 }
 
-.right-nav li {
-  margin: 0 5px;
+.nav-links li{
+  display: flex;
+  list-style: none; /* Removes bullet points */
+  margin: 0 2px;
+  gap: 4px; /* Space between items */
   color: white;
   display: inline-block; /* Ensures list items are inline */
 }
 
-.right-nav a {
-  text-decoration: none; /* Removes underline */
+.nav-links li a {
   color: white; /* Text color */
+  font-family: 'Roboto', sans-serif; /* Font family */
+  text-decoration: none; /* Removes underline from links */
   font-size: 1rem; /* Font size */
-  padding: 10px 15px; /* Padding around links */
+  padding: 8px 12px; /* Padding around links */
   border-radius: 5px; /* Optional: adds border radius for rounded corners */
   transition: background-color 0.3s; /* Smooth hover effect */
 }
@@ -57,35 +56,10 @@
   background-color: rgba(22, 29, 223, 0.4); /* Hover effect */
 }
 
-#nav-bar ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-
-}
-
-#nav-bar ul li {
-  margin: 0px 1rem;
-}
-
-#nav-bar ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 0;
-}
-
-.right {
-  display: none;
-}
-
 .contact-button {
   background-color: rgba(209, 209, 245, 0.895);
   border: none;
   color: rgb(65, 64, 64);
-  text-align:center;
-  text-decoration: none;
   padding: 3px 30px;
   cursor: pointer;
   border-radius: 10px;
@@ -105,29 +79,34 @@
     padding: 10px 5%; /* Adjust padding to fit screen */
   }
 
+  .left-nav {
+    flex: 1;
+  }
   .left-nav h1 {
     padding-left: 0;
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
   }
 
   .right-nav {
     padding-left: 0; /* Remove padding on smaller screens */
     padding-right: 0; /* Remove extra padding */
-    gap: 15px; /* Reduce gap between items for better fitting */
+    width: 100%; /* Full width for right-nav */
+    gap: 10px; /* Reduce gap between items for better fitting */
   }
 
-  .right-nav li {
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .right-nav li a {
     display: inline-block; /* Keep list items inline */
-  }
-
-  .right-nav a {
-    font-size: 1rem; /* Keep consistent font size */
-    padding: 8px 10px; /* Adjust padding for better fitting */
   }
 
   .contact-button {
     font-size: 14px; /* Adjust button font size for smaller screens */
     padding: 8px 15px; /* Adjust padding */
+    width: 100%; /* Full width for button */
   }
 }
 
