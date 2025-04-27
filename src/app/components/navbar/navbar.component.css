@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 5%;
-  border-bottom: 2px solid rgba(247, 248, 252, 0.3);
+  border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 .left-nav {
@@ -20,13 +20,13 @@
 
 
 .left-nav h1 {
-  color: white;
+  color: rgb(148, 213, 240);
   margin: 0;
   font-size: 1.8rem;
 }
 
 .right-nav {
-  color: white;
+  color: rgb(255, 255, 255);
   display: flex; /* Enables Flexbox */
   align-items: center; /* Aligns items vertically */
   gap: 5px; /* Adds spacing between items */
@@ -43,7 +43,7 @@
 }
 
 .nav-links li a {
-  color: white; /* Text color */
+  color: rgb(109, 214, 241); /* Text color */
   font-family: 'Roboto', sans-serif; /* Font family */
   text-decoration: none; /* Removes underline from links */
   font-size: 1rem; /* Font size */
@@ -76,26 +76,28 @@
   #nav-bar {
     flex-direction: row; /* Keep the navbar items aligned horizontally */
     justify-content: space-between; /* Keep space between the left and right sections */
-    padding: 10px 5%; /* Adjust padding to fit screen */
+    padding: 15px 3%; /* Adjust padding to fit screen */
+  }
+
+  .left-nav h1 {
+    padding-left: 0;
+    font-size: 1.3rem; /* Adjust font size for smaller screens */
+
   }
 
   .left-nav {
-    flex: 1;
-  }
-  .left-nav h1 {
-    padding-left: 0;
-    font-size: 1.2rem; /* Adjust font size for smaller screens */
+    width: 10%;
   }
 
   .right-nav {
+
     padding-left: 0; /* Remove padding on smaller screens */
     padding-right: 0; /* Remove extra padding */
-    width: 100%; /* Full width for right-nav */
-    gap: 10px; /* Reduce gap between items for better fitting */
+    gap: 1px; /* Reduce gap between items for better fitting */
   }
 
   .nav-links {
-    flex-direction: row;
+    flex-direction:row;
     flex-wrap: wrap;
   }
 
@@ -107,6 +109,10 @@
     font-size: 14px; /* Adjust button font size for smaller screens */
     padding: 8px 15px; /* Adjust padding */
     width: 100%; /* Full width for button */
+  }
+
+  .contact-button:hover {
+    background-color: rgba(40, 57, 72, 0.8); /* Hover effect for button */
   }
 }
 
