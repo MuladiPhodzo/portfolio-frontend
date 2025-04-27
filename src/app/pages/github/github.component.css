@@ -1,0 +1,94 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 100px;
+  display: grid;
+  background: radial-gradient(farthest-side, #fff 98%, #0000) center/30px 100%
+    no-repeat;
+  --mask:
+    radial-gradient(12px at left 15px top 50%, #0000 95%, #000),
+    radial-gradient(12px at center, #0000 95%, #000),
+    radial-gradient(12px at right 15px top 50%, #0000 95%, #000);
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+  -webkit-mask-composite: source-in;
+          mask-composite: intersect;
+  animation: l2 1s infinite alternate;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  grid-area: 1/1;
+  height: 30px;
+  aspect-ratio: 1;
+  background: #fff;
+  border-radius: 50%;
+}
+.loader:after {
+  margin-left: auto;
+}
+
+@keyframes l2 {
+  to {
+    width: 50px;
+  }
+}
+
+.repos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+.repo-card {
+  flex: 0 0 300px; /* Fixed width */
+  scroll-snap-align: start;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 16px;
+  width: 280px;
+  height: 320px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.repos-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+.repo-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.repo-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.repo-card a {
+  color: #ffe600;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.repo-description {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+

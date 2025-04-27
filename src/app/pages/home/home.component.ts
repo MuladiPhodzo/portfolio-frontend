@@ -1,12 +1,14 @@
 import { Component, Inject, AfterViewInit } from '@angular/core';
 import { ContactComponent } from "../contact/contact.component";
+import { GithubComponent } from '../github/github.component'
 import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  imports: [GithubComponent]
 })
 export class HomeComponent implements AfterViewInit {
 
